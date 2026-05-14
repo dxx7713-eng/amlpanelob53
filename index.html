@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIMLOCK PANEL</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#050814;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    overflow:hidden;
+}
+
+.panel{
+    width:520px;
+    height:290px;
+    background:#050d23;
+    border:1.5px solid #ff9f1a;
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 0 18px rgba(255,166,0,0.22);
+}
+
+.topbar{
+    height:52px;
+    border-bottom:1.5px solid #ff9f1a;
+    background:#0a1227;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 12px;
+}
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.logo{
+    width:30px;
+    height:30px;
+    background:#ff9f1a;
+    border-radius:8px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#000;
+    font-size:16px;
+    font-weight:bold;
+}
+
+.title h1{
+    color:#ffb32c;
+    font-size:16px;
+    font-weight:bold;
+    line-height:16px;
+}
+
+.title p{
+    color:#8e96ab;
+    font-size:9px;
+    margin-top:3px;
+}
+
+.right-info{
+    display:flex;
+    gap:8px;
+}
+
+.live,
+.owner{
+    border:1px solid #ff9f1a;
+    padding:5px 10px;
+    border-radius:10px;
+    color:#ffb32c;
+    background:#10192e;
+    font-size:10px;
+    font-weight:bold;
+}
+
+.content{
+    display:flex;
+    height:calc(100% - 52px);
+}
+
+.sidebar{
+    width:100px;
+    border-right:1.5px solid #ff9f1a;
+    background:#08101f;
+    padding-top:15px;
+}
+
+.menu-item{
+    background:#121b31;
+    border-left:3px solid #ff9f1a;
+    color:white;
+    font-size:13px;
+    font-weight:bold;
+    padding:12px 14px;
+}
+
+.main{
+    flex:1;
+    padding:16px;
+}
+
+.section-title{
+    color:#ffb32c;
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:14px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+}
+
+.card{
+    background:#111a31;
+    border:1px solid #202c4a;
+    border-radius:10px;
+    padding:12px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.card span{
+    color:white;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.switch{
+    position:relative;
+    width:42px;
+    height:22px;
+}
+
+.switch input{
+    display:none;
+}
+
+.slider{
+    position:absolute;
+    inset:0;
+    background:#434b61;
+    border-radius:50px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.slider:before{
+    content:"";
+    position:absolute;
+    width:16px;
+    height:16px;
+    left:3px;
+    top:3px;
+    background:white;
+    border-radius:50%;
+    transition:0.3s;
+}
+
+input:checked + .slider{
+    background:#ff9f1a;
+}
+
+input:checked + .slider:before{
+    transform:translateX(20px);
+}
+
+.bottom{
+    margin-top:14px;
+    display:flex;
+    justify-content:space-between;
+    color:#ffb32c;
+    font-size:10px;
+    font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="panel">
+
+    <div class="topbar">
+
+        <div class="logo-area">
+
+            <div class="logo">HV</div>
+
+            <div class="title">
+                <h1>AIMLOCK PANEL</h1>
+                <p>Free Fire - Free Fire Max</p>
+            </div>
+
+        </div>
+
+        <div class="right-info">
+            <div class="live">● LIVE</div>
+            <div class="owner">OWMER : Hắc Vê</div>
+        </div>
+
+    </div>
+
+    <div class="content">
+
+        <div class="sidebar">
+            <div class="menu-item">AimBot</div>
+        </div>
+
+        <div class="main">
+
+            <div class="section-title">CHỨC NĂNG</div>
+
+            <div class="grid">
+
+                <div class="card">
+                    <span>AimLock</span>
+
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+                <div class="card">
+                    <span>Nhẹ Tâm</span>
+
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+                <div class="card">
+                    <span>Aim Head</span>
+
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+                <div class="card">
+                    <span>Fix Rung</span>
+
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+            </div>
+
+            <div class="bottom">
+                <div>● External</div>
+                <div>● BYPASS ACTIVE</div>
+                <div>ACTIVE</div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
